@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio</title>
+    <link rel="stylesheet" href="home_style.css">
+    
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Bio.html">Bio</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+       </div>
+
+
+		<div class="container">
+					<h2>About Me</h2>
+                    
+			
+				<div class="credentials">
+					<ul class="info">
+						<li><span class="first-block">Full Name:</span><span class="second-block">Paul Anthony Molina</span></li>
+						<li><span class="first-block">Phone:</span><span class="second-block">+ 1235 2355 98</span></li>
+						<li><span class="first-block">Email:</span><span class="second-block">info@yoursite.com</span></li>
+                        <li><span class="first-block">Hobbies:</span><span class="second-block">Foodie | Dj | Anime</span></li>
+                        <li><span class="first-block">Occupation:</span><span class="second-block">Software Engineer I</span></li>
+                        <li><span class="first-block">Languages:</span><span class="second-block">English & Español</span></li>
+					</ul>
+				</div>
+
+				<div class="intro">
+					<p>"There comes a day in your life when you wanna kick back Straw hat on the porch when you're old, perhaps. Wanna gather your thoughts, have a cold one brag to your grandkids about how life is golden."</p>
+				</div>
+			</div>
+		</div>
+
+        <div class="form">
+            <h1>Have a project in need of completion?</h1>
+
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label>Preferred Method of Contact:</label>
+                <label><input type="radio" name="contact_method" value="phone"> Phone</label>
+                <label><input type="radio" name="contact_method" value="email"> Email</label>
+        
+                <label for="inquiry">Inquiry:</label>
+                <textarea id="inquiry" name="inquiry" rows="4" required></textarea>
+        
+                <input type="submit" value="Submit Inquiry">
+            </form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+
+body{
+    background-color: lightgray
+}
+
+
+
+nav {
+    background-color: blue;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;    
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* ---------------------------------- work on flexboxes, alignment , set width min. so it doesn't shrink ------------ */
+
+.intro-box {
+    display:flex;
+    justify-content: center;
+}
+
+.info {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  float: left;
+}
+
+.info li {
+    width: 100%;
+    float: left;
+    list-style: none;
+    padding: 10px 0;
+  }
+  .info li:first-child {
+    padding-top: 10;
+  }
+  .info li .first-block {
+    width: 15%;
+    display: inline-block;
+    float: left;
+    color: #000;
+    font-weight: bold;
+  }
+  .info li .second-block {
+    width: 60%;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* ---------------------------------------------- */
+
+  p {
+    font-size: 250%;
+    border-radius: 8%;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+
+  .grid-container {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: auto 1fr; /* The first column is auto-sized, and the second column takes up the remaining space */
+    gap: 20px; /* Adjust the gap between the image and blockquote */
+}
+
+    img {
+        width: 500px;
+        height: auto;
+        border-color: black;
+        border: 10px solid black;
+        border-radius: 10%;
+    }
+
+      /* --------------------BIO-------------------------- */
+
+    .credentials{
+        display: flex;
+    }
+    
+
+     /* --------------------FORM-------------------------- */
+
+     .form {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    input,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    
+    h1 {
+        text-align: center;
+    }
